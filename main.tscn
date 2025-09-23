@@ -30,12 +30,12 @@ theme_override_font_sizes/font_size = 22
 text = "PlantDex"
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(587, 320)
+position = Vector2(601, 305)
 scale = Vector2(6.6732945, 5.607701)
 texture = ExtResource("1_ig7tw")
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
-position = Vector2(62.828438, 46.08498)
+position = Vector2(54.246063, 36.55687)
 scale = Vector2(0.6756067, 1.1241417)
 texture = ExtResource("2_lquwl")
 
@@ -53,7 +53,7 @@ texture = ExtResource("3_7mycd")
 script = ExtResource("2_h2yge")
 
 [node name="Sprite2D" type="Sprite2D" parent="TestFarmer"]
-position = Vector2(46, 560)
+position = Vector2(111, 542)
 scale = Vector2(3.5819237, 4.006919)
 texture = ExtResource("3_1bvp3")
 region_enabled = true
