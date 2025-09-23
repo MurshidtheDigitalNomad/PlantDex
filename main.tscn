@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3 uid="uid://bde7s1iqx1cq0"]
+
+[ext_resource type="Texture2D" uid="uid://cru2le7mg514o" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bo2uquajmo8su" path="res://testfarmer.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bamdsbw1mybmx" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://cpbt265e7tood" path="res://assets/StupidFarmer.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://5gq64lhfru55" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="3_7mycd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+
+[sub_resource type="TileSet" id="TileSet_h2yge"]
+tile_size = Vector2i(64, 64)
+
+[node name="WorldObjects" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchor_bottom = 0.031000001
+offset_right = 40.0
+offset_bottom = 19.911999
+
+[node name="Label" type="Label" parent="."]
+offset_left = 492.0
+offset_top = 17.0
+offset_right = 588.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 22
+text = "PlantDex"
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(587, 320)
+scale = Vector2(6.6732945, 5.607701)
+texture = ExtResource("1_ig7tw")
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+position = Vector2(62.828438, 46.08498)
+scale = Vector2(0.6756067, 1.1241417)
+texture = ExtResource("2_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background"]
+position = Vector2(-11.988084, -2.8532217)
+scale = Vector2(0.2681992, 0.31331474)
+texture = ExtResource("3_7mycd")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background/Sprite2D2"]
+position = Vector2(126.451706, 1.5322952)
+scale = Vector2(0.9896552, 0.9125729)
+texture = ExtResource("3_7mycd")
+
+[node name="TestFarmer" type="CharacterBody2D" parent="."]
+script = ExtResource("2_h2yge")
+
+[node name="Sprite2D" type="Sprite2D" parent="TestFarmer"]
+position = Vector2(46, 560)
+scale = Vector2(3.5819237, 4.006919)
+texture = ExtResource("3_1bvp3")
+region_enabled = true
+region_rect = Rect2(-5, -2.5, 34, 35)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TestFarmer"]
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_h2yge")
+format = 2
