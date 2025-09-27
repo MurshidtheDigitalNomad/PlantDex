@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bde7s1iqx1cq0"]
+[gd_scene load_steps=9 format=3 uid="uid://bde7s1iqx1cq0"]
 
 [ext_resource type="Texture2D" uid="uid://cru2le7mg514o" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://bo2uquajmo8su" path="res://testfarmer.gd" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bamdsbw1mybmx" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="2_lquwl"]
 [ext_resource type="Texture2D" uid="uid://cpbt265e7tood" path="res://assets/StupidFarmer.png" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://5gq64lhfru55" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="3_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cp47vedimh7lj" path="res://Scenes/ui_hud.tscn" id="6_7mycd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
 
@@ -30,7 +31,7 @@ theme_override_font_sizes/font_size = 22
 text = "PlantDex"
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(601, 305)
+position = Vector2(551, 253)
 scale = Vector2(6.6732945, 5.607701)
 texture = ExtResource("1_ig7tw")
 
@@ -65,3 +66,5 @@ shape = SubResource("RectangleShape2D_lquwl")
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_h2yge")
 format = 2
+
+[node name="UI_hud" parent="." instance=ExtResource("6_7mycd")]
