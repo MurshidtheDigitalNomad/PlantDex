@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bde7s1iqx1cq0"]
+[gd_scene load_steps=21 format=3 uid="uid://bde7s1iqx1cq0"]
 
 [ext_resource type="Texture2D" uid="uid://dbbis4442x64e" path="res://Tilesets/ground_tiles.tres" id="1_mli2r"]
 [ext_resource type="Texture2D" uid="uid://cpbt265e7tood" path="res://assets/StupidFarmer.png" id="2_f8fyy"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://nvkstxrkqonu" path="res://Tilesets/trees.tres" id="4_7tdlr"]
 [ext_resource type="Script" uid="uid://dxiobbgkwpfi" path="res://scenes/world/SoilTileMap.gd" id="4_tt8nk"]
 [ext_resource type="Texture2D" uid="uid://bajcxjco4i4li" path="res://Tilesets/bridges.tres" id="6_6r0uj"]
+[ext_resource type="PackedScene" uid="uid://cg432s1v3361j" path="res://scenes/nasa_indicators.tscn" id="8_j0r68"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
 texture = ExtResource("1_mli2r")
@@ -1498,3 +1499,6 @@ region_rect = Rect2(-5, -2.5, 34, 35)
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_f8fyy")
 debug_color = Color(0.7947501, 0.3193861, 0.71701604, 0.41960785)
+
+[node name="NASAIndicators" parent="." instance=ExtResource("8_j0r68")]
+position = Vector2(79, 245)

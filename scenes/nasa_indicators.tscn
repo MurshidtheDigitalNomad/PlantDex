@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=3 uid="uid://cg432s1v3361j"]
+
+[ext_resource type="Texture2D" uid="uid://k17dmgfo85fv" path="res://assets/GUI-Kit-Pack-Free_35.png" id="2_c4tbh"]
+[ext_resource type="Texture2D" uid="uid://cnth83ykoxm17" path="res://assets/GUI Kit Pack Free.svg" id="3_8isn4"]
+[ext_resource type="Texture2D" uid="uid://blj5knnbtra0q" path="res://assets/GUI-Kit-Pack-Free_11.png" id="3_bb3rs"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c4tbh"]
+texture = ExtResource("3_8isn4")
+16:18/size_in_atlas = Vector2i(21, 2)
+16:18/0 = 0
+16:0/size_in_atlas = Vector2i(21, 3)
+16:0/0 = 0
+16:5/size_in_atlas = Vector2i(21, 1)
+16:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bb3rs"]
+sources/0 = SubResource("TileSetAtlasSource_c4tbh")
+
+[node name="NASAIndicators" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="SoilMoistureLabel" type="Label" parent="."]
+z_index = 11
+offset_left = 277.0
+offset_top = 71.0
+offset_right = 383.0
+offset_bottom = 94.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Soil Moisture:"
+
+[node name="SoilMoistureProgressBar" type="TextureProgressBar" parent="SoilMoistureLabel"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 5.0
+offset_right = 235.0
+offset_bottom = 23.0
+value = 50.0
+nine_patch_stretch = true
+texture_over = ExtResource("2_c4tbh")
+texture_progress = ExtResource("3_bb3rs")
+
+[node name="NDVILabel" type="Label" parent="."]
+z_index = 11
+offset_left = 276.0
+offset_top = 40.0
+offset_right = 320.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "NDVI:"
+
+[node name="NDVIProgressBar" type="TextureProgressBar" parent="NDVILabel"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 3.0
+offset_right = 178.0
+offset_bottom = 21.0
+value = 50.0
+nine_patch_stretch = true
+texture_over = ExtResource("2_c4tbh")
+texture_progress = ExtResource("3_bb3rs")
+
+[node name="IndicatorLabel" type="Label" parent="."]
+z_index = 11
+offset_left = 274.0
+offset_top = 10.0
+offset_right = 356.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Indicators:"
+
+[node name="HealthLabel" type="Label" parent="."]
+z_index = 11
+offset_left = 279.0
+offset_top = 103.0
+offset_right = 335.0
+offset_bottom = 126.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Health:"
+
+[node name="HealthProgressBar" type="TextureProgressBar" parent="HealthLabel"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 3.0
+offset_right = 187.0
+offset_bottom = 21.0
+value = 50.0
+nine_patch_stretch = true
+texture_over = ExtResource("2_c4tbh")
+texture_progress = ExtResource("3_bb3rs")
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = 10
+tile_set = SubResource("TileSet_bb3rs")
+format = 2
+layer_0/tile_data = PackedInt32Array(720920, 1048576, 18, -131048, 1048576, 0, 24, 1048576, 5, 65560, 1048576, 5, 131096, 1048576, 5, 196632, 1048576, 5, 262168, 1048576, 5, 327704, 1048576, 5, 458776, 1048576, 5, 393240, 1048576, 5, 524312, 1048576, 5, 589848, 1048576, 5, 655384, 1048576, 5)
