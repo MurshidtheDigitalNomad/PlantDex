@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://df6osrwm4cmm3"]
+
+[node name="SoilMode" type="Node2D"]
+
+[node name="SoilState" type="Node" parent="."]
+
+[node name="SoilMoisture" type="Label" parent="SoilState"]
+z_index = 11
+offset_left = 3.0
+offset_top = 45.0
+offset_right = 137.0
+offset_bottom = 68.0
+text = "Soil Moisture"
+
+[node name="BodyTemperature" type="Label" parent="SoilState"]
+z_index = 11
+offset_left = 4.0
+offset_top = 109.0
+offset_right = 198.0
+offset_bottom = 132.0
+text = "Crop Water Requirement"
+
+[node name="SoilStateTitle" type="Label" parent="SoilState"]
+z_index = 11
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 98.0
+offset_bottom = 33.0
+text = "Soil State:"
+
+[node name="WaterIntake" type="Label" parent="SoilState"]
+z_index = 11
+offset_left = 3.0
+offset_top = 76.0
+offset_right = 137.0
+offset_bottom = 99.0
+text = "Water Intake"
+
+[node name="SoilInformation" type="Node" parent="."]
+
+[node name="SoilInformationTitle" type="Label" parent="SoilInformation"]
+offset_left = 16.0
+offset_top = 172.0
+offset_right = 150.0
+offset_bottom = 195.0
+text = "Soil Moisture vs Datetime"
+
+[node name="White" type="Label" parent="SoilInformation"]
+offset_left = 3.0
+offset_top = 245.0
+offset_right = 187.0
+offset_bottom = 268.0
+text = "White: grid soil moisture value"
+
+[node name="Green" type="Label" parent="SoilInformation"]
+offset_left = 3.0
+offset_top = 218.0
+offset_right = 271.0
+offset_bottom = 241.0
+text = "Green: average soil moisture value"
+
+[node name="PlantdexRecommends" type="Node" parent="."]
+
+[node name="PlantdexRecommendsTitle" type="Label" parent="PlantdexRecommends"]
+offset_left = 6.0
+offset_top = 335.0
+offset_right = 190.0
+offset_bottom = 358.0
+text = "PlantDex Recommends:"
+
+[node name="PlantdexRecommendsAnswer" type="Label" parent="PlantdexRecommends"]
+offset_left = 7.0
+offset_top = 364.0
+offset_right = 191.0
+offset_bottom = 387.0
+text = "Plantdex"

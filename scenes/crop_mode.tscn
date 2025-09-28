@@ -1,0 +1,97 @@
+[gd_scene format=3 uid="uid://c83a5gtxd3ftp"]
+
+[node name="CropMode" type="Node2D"]
+
+[node name="CropState" type="Node" parent="."]
+
+[node name="SoilMoisture" type="Label" parent="CropState"]
+z_index = 11
+offset_left = 310.0
+offset_top = 43.0
+offset_right = 444.0
+offset_bottom = 66.0
+text = "Soil Moisture"
+
+[node name="BodyTemperature" type="Label" parent="CropState"]
+z_index = 11
+offset_left = 1.0
+offset_top = 41.0
+offset_right = 146.0
+offset_bottom = 64.0
+text = "Body Temperature"
+
+[node name="CropStateTitle" type="Label" parent="CropState"]
+z_index = 11
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 98.0
+offset_bottom = 33.0
+text = "Crop State:"
+
+[node name="NDVI" type="Label" parent="CropState"]
+z_index = 11
+offset_left = 3.0
+offset_top = 76.0
+offset_right = 137.0
+offset_bottom = 99.0
+text = "NDVI"
+
+[node name="CropInformation" type="Node" parent="."]
+
+[node name="CropInformationTitle" type="Label" parent="CropInformation"]
+offset_left = 22.0
+offset_top = 169.0
+offset_right = 156.0
+offset_bottom = 192.0
+text = "Crop Information"
+
+[node name="WaterRequirement" type="Label" parent="CropInformation"]
+offset_left = 379.0
+offset_top = 246.0
+offset_right = 532.0
+offset_bottom = 269.0
+text = "Water Requirement"
+
+[node name="NDVIThreshold" type="Label" parent="CropInformation"]
+offset_left = 377.0
+offset_top = 213.0
+offset_right = 498.0
+offset_bottom = 236.0
+text = "NDVI Threshold"
+
+[node name="MinSMAP" type="Label" parent="CropInformation"]
+offset_left = 4.0
+offset_top = 281.0
+offset_right = 189.0
+offset_bottom = 304.0
+text = "Minimum Soil Moisture:"
+
+[node name="MaxTemp" type="Label" parent="CropInformation"]
+offset_left = 3.0
+offset_top = 245.0
+offset_right = 187.0
+offset_bottom = 268.0
+text = "Maximum Temperature"
+
+[node name="MinTemp" type="Label" parent="CropInformation"]
+offset_left = 4.0
+offset_top = 214.0
+offset_right = 185.0
+offset_bottom = 237.0
+text = "Minimum Temperature"
+
+[node name="PlantdexRecommends" type="Node" parent="."]
+
+[node name="PlantdexRecommendsTitle" type="Label" parent="PlantdexRecommends"]
+offset_left = 6.0
+offset_top = 335.0
+offset_right = 190.0
+offset_bottom = 358.0
+text = "PlantDex Recommends:"
+
+[node name="PlantdexRecommendsAnswer" type="Label" parent="PlantdexRecommends"]
+offset_left = 7.0
+offset_top = 364.0
+offset_right = 191.0
+offset_bottom = 387.0
+text = "Plantdex"

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dljjatnhpgvgg"]
+
+[ext_resource type="PackedScene" uid="uid://c6c3wuyu1auep" path="res://scenes/map.tscn" id="1_u282o"]
+[ext_resource type="PackedScene" uid="uid://bu21is1ktajue" path="res://scenes/camera_mover.tscn" id="2_mydv8"]
+
+[node name="TestRun" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_u282o")]
+
+[node name="CameraMover" parent="." instance=ExtResource("2_mydv8")]
+position = Vector2(259, 62)

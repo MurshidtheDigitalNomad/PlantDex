@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu21is1ktajue"]
+
+[ext_resource type="Script" uid="uid://dm0bceuv3otdj" path="res://Scripts/camera_mover.gd" id="1_3rp7e"]
+
+[node name="CameraMover" type="CharacterBody2D"]
+script = ExtResource("1_3rp7e")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
