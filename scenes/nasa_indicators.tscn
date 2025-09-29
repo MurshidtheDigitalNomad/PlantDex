@@ -17,7 +17,6 @@ texture = ExtResource("3_8isn4")
 sources/0 = SubResource("TileSetAtlasSource_c4tbh")
 
 [node name="NASAIndicators" type="Node2D"]
-scale = Vector2(0.5, 0.5)
 
 [node name="SoilMoistureLabel" type="Label" parent="."]
 z_index = 11
@@ -25,7 +24,6 @@ offset_left = 277.0
 offset_top = 71.0
 offset_right = 383.0
 offset_bottom = 94.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Soil Moisture:"
 
 [node name="SoilMoistureProgressBar" type="TextureProgressBar" parent="SoilMoistureLabel"]
@@ -45,7 +43,6 @@ offset_left = 276.0
 offset_top = 40.0
 offset_right = 320.0
 offset_bottom = 63.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "NDVI:"
 
 [node name="NDVIProgressBar" type="TextureProgressBar" parent="NDVILabel"]
@@ -65,7 +62,6 @@ offset_left = 274.0
 offset_top = 10.0
 offset_right = 356.0
 offset_bottom = 33.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Indicators:"
 
 [node name="HealthLabel" type="Label" parent="."]
@@ -74,7 +70,6 @@ offset_left = 279.0
 offset_top = 103.0
 offset_right = 335.0
 offset_bottom = 126.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Health:"
 
 [node name="HealthProgressBar" type="TextureProgressBar" parent="HealthLabel"]
@@ -89,7 +84,13 @@ texture_over = ExtResource("2_c4tbh")
 texture_progress = ExtResource("3_bb3rs")
 
 [node name="TileMap" type="TileMap" parent="."]
+visible = false
 z_index = 10
 tile_set = SubResource("TileSet_bb3rs")
 format = 2
 layer_0/tile_data = PackedInt32Array(720920, 1048576, 18, -131048, 1048576, 0, 24, 1048576, 5, 65560, 1048576, 5, 131096, 1048576, 5, 196632, 1048576, 5, 262168, 1048576, 5, 327704, 1048576, 5, 458776, 1048576, 5, 393240, 1048576, 5, 524312, 1048576, 5, 589848, 1048576, 5, 655384, 1048576, 5)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 252.0
+offset_right = 534.0
+offset_bottom = 148.0
