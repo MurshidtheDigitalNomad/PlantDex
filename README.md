@@ -17,7 +17,7 @@ To play the game, open `project.godot` and click the **Play** button in the top-
 - **NASA POWER:** Provides temperature, precipitation, solar radiation, wind speed, and relative humidity  
 - **NASA SMAP:** Measures soil moisture and Freeze/Thaw Status  
 - **NASA IMERG:** Provides precipitation values  
-- **NASA MODIS:** Normalized Difference Vegetation Index (NDVI) – Level of greenness from satellite imagery
+- **NASA LP DAAC:** Normalized Difference Vegetation Index (NDVI) – Level of greenness from satellite imagery
 
 ---
 
