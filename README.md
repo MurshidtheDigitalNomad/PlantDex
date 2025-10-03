@@ -1,6 +1,11 @@
 How to play:
 To play the video game, open project.godot and then click the Play button on the right hand corner.
 
+TECH STACK:
+
+For development of game GODOT engine and GDscript programming language was used. For development of the Machine Learning Model Python in Jupyter Notebook was used. 
+
+
 Features:
 
 NASA API USAGE:
