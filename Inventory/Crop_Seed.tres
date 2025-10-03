@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InvItem" load_steps=3 format=3 uid="uid://gh01dhxwwai4"]
+
+[ext_resource type="Script" uid="uid://w2r4h82g7syy" path="res://Inventory/inventoryitems.gd" id="1_qgg2s"]
+[ext_resource type="Texture2D" uid="uid://w4ov0urr6gll" path="res://assetszarif/Hana Caraka - Farming n Foraging [sample]/crops/cropseed.png" id="2_n221p"]
+
+[resource]
+script = ExtResource("1_qgg2s")
+name = "Crop_Seed"
+texture = ExtResource("2_n221p")
+metadata/_custom_type_script = "uid://w2r4h82g7syy"

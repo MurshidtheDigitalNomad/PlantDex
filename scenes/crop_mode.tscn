@@ -1,8 +1,19 @@
-[gd_scene format=3 uid="uid://c83a5gtxd3ftp"]
+[gd_scene load_steps=2 format=3 uid="uid://c83a5gtxd3ftp"]
+
+[ext_resource type="Script" uid="uid://b6763fijcmlvu" path="res://Scripts/crop_mode.gd" id="1_7wfyi"]
 
 [node name="CropMode" type="Node2D"]
+z_index = 10
+scale = Vector2(2, 2)
+script = ExtResource("1_7wfyi")
 
-[node name="CropState" type="Node" parent="."]
+[node name="Panel" type="Panel" parent="."]
+offset_left = -59.0
+offset_top = -53.0
+offset_right = 651.0
+offset_bottom = 441.0
+
+[node name="CropState" type="Node2D" parent="."]
 
 [node name="SoilMoisture" type="Label" parent="CropState"]
 z_index = 11
@@ -36,9 +47,10 @@ offset_right = 137.0
 offset_bottom = 99.0
 text = "NDVI"
 
-[node name="CropInformation" type="Node" parent="."]
+[node name="CropInformation" type="Node2D" parent="."]
 
 [node name="CropInformationTitle" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 22.0
 offset_top = 169.0
 offset_right = 156.0
@@ -46,20 +58,23 @@ offset_bottom = 192.0
 text = "Crop Information"
 
 [node name="WaterRequirement" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 379.0
 offset_top = 246.0
 offset_right = 532.0
 offset_bottom = 269.0
-text = "Water Requirement"
+text = "Water Requirement:"
 
 [node name="NDVIThreshold" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 377.0
 offset_top = 213.0
 offset_right = 498.0
 offset_bottom = 236.0
-text = "NDVI Threshold"
+text = "NDVI Threshold: "
 
 [node name="MinSMAP" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 4.0
 offset_top = 281.0
 offset_right = 189.0
@@ -67,20 +82,22 @@ offset_bottom = 304.0
 text = "Minimum Soil Moisture:"
 
 [node name="MaxTemp" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 3.0
 offset_top = 245.0
 offset_right = 187.0
 offset_bottom = 268.0
-text = "Maximum Temperature"
+text = "Maximum Temperature:"
 
 [node name="MinTemp" type="Label" parent="CropInformation"]
+z_index = 11
 offset_left = 4.0
 offset_top = 214.0
 offset_right = 185.0
 offset_bottom = 237.0
-text = "Minimum Temperature"
+text = "Minimum Temperature:"
 
-[node name="PlantdexRecommends" type="Node" parent="."]
+[node name="PlantdexRecommends" type="Node2D" parent="."]
 
 [node name="PlantdexRecommendsTitle" type="Label" parent="PlantdexRecommends"]
 offset_left = 6.0

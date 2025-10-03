@@ -1,18 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://dljjatnhpgvgg"]
+[gd_scene load_steps=5 format=3 uid="uid://dljjatnhpgvgg"]
 
 [ext_resource type="PackedScene" uid="uid://c6c3wuyu1auep" path="res://scenes/map.tscn" id="1_u282o"]
 [ext_resource type="PackedScene" uid="uid://bu21is1ktajue" path="res://scenes/camera_mover.tscn" id="2_mydv8"]
-[ext_resource type="PackedScene" uid="uid://cg432s1v3361j" path="res://scenes/nasa_indicators.tscn" id="3_mydv8"]
+[ext_resource type="PackedScene" uid="uid://1ipdhoueyo4u" path="res://scenes/music.tscn" id="3_xtobm"]
+[ext_resource type="AudioStream" uid="uid://db711s8b8u2w0" path="res://assets/Music/Home+Town+Master.mp3" id="4_prw6i"]
 
 [node name="TestRun" type="Node2D"]
 
 [node name="Map" parent="." instance=ExtResource("1_u282o")]
-position = Vector2(-148, -13)
+position = Vector2(223, 89)
 
 [node name="CameraMover" parent="." instance=ExtResource("2_mydv8")]
-position = Vector2(259, 62)
+position = Vector2(471, 148)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="NASAIndicators" parent="CanvasLayer" instance=ExtResource("3_mydv8")]
-position = Vector2(-146, 22)
+[node name="Music" parent="." instance=ExtResource("3_xtobm")]
+stream = ExtResource("4_prw6i")
+autoplay = true

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd1sqwplc28nu"]
+
+[ext_resource type="Script" uid="uid://bc0pfj65gdh63" path="res://Scripts/crop_database.gd" id="1_v1rqf"]
+
+[node name="CropDatabase" type="Node"]
+script = ExtResource("1_v1rqf")

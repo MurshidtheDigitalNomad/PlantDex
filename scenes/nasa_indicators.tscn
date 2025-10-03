@@ -91,6 +91,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(720920, 1048576, 18, -131048, 1048576, 0, 24, 1048576, 5, 65560, 1048576, 5, 131096, 1048576, 5, 196632, 1048576, 5, 262168, 1048576, 5, 327704, 1048576, 5, 458776, 1048576, 5, 393240, 1048576, 5, 524312, 1048576, 5, 589848, 1048576, 5, 655384, 1048576, 5)
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 252.0
-offset_right = 534.0
-offset_bottom = 148.0
+offset_left = 255.0
+offset_top = -1.0
+offset_right = 537.0
+offset_bottom = 147.0

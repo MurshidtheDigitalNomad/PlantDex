@@ -7,7 +7,7 @@ const GRASS_TILE = Vector2i(1, 0)
 const WATER_TILE = Vector2i(0, 0)
 const SOURCE_ID = 0  # your tileset source ID (check in TileSet editor)
 
-
+"""
 func _unhandled_input(event):
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var tile_pos = local_to_map(get_local_mouse_position())
@@ -22,3 +22,4 @@ func _unhandled_input(event):
 				set_cell(tile_pos, SOURCE_ID, WATER_TILE)
 			elif atlas == WATER_TILE:
 				set_cell(tile_pos, SOURCE_ID, GRASS_TILE)
+"""
